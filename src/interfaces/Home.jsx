@@ -1,15 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import NavPerfil from '../components/NavPerfil';
+import Reloj from '../components/Reloj';
+import Tareas from "../components/Tareas"
 
 function Home() {
   return (
     <React.Fragment>
-      <Container
-        fluid
-        className="altura-max d-flex flex-column justify-content-center align-items-center align-content-center"
-      >
-   
+      <Container>
+            <Row>
+                <Col>
+                    <NavPerfil />
+                    <Reloj />
+                    <Tareas />
+                </Col>
+            </Row>
+            
+
       </Container>
     </React.Fragment>
   );

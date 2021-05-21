@@ -6,6 +6,7 @@ import Intro from "./interfaces/Intro";
 import Acceder from './interfaces/Acceder';
 import Registro from './interfaces/Registro';
 import Perfil from './interfaces/Perfil';
+import Home from './interfaces/Home';
 
 
 function App() {
@@ -38,8 +39,9 @@ function App() {
         </Route>
          {/* HOME*/}
          <Route path="/home">
-          <Perfil/>
+          <Home/>
         </Route>
+
       </Switch>
     </Router>
   </Fragment>

@@ -12,6 +12,8 @@ body {
   background: #f7f7f7;
   font-family: "Lato", sans-serif;
   font-family: "Raleway", sans-serif;
+  text-align: center  !important;
+  color: #a06ecf !important;
 }
 .altura-max {
   height: 100vh;
@@ -97,5 +99,54 @@ body {
 /* PERFIL */
 .user{
   width: 20vw;
-  color: #a06ecf
+}
+
+/* HOME */
+
+.nav{
+  color: #F4A240  !important;
+  font-family: "Lato";
+  font-weight:normal;
+}
+
+.logIn{
+  margin-right: 0.5em;
+}
+.reloj {
+  font-family: "Raleway";
+  text-align: center;
+  color: #a06ecf;
+  font-weight: 700;
+}
+.texto-light{
+  font-family: "Raleway";
+  font-weight: 200;
+  text-align: center;
+  color: #69e8b4;
+  margin:0px;
+
+}
+.play{
+  width: 10vw;
+
+}
+.mate-tarea, .more{
+  width:1.5em;
+
+}
+.texto-tarea {
+  color: #a06ecf !important;
+  font-family: "Raleway";
+  font-weight: 300;
+  margin:0;
+  padding-left: 0.5em;
+}
+.texto-input{
+  color: #a06ecf !important;
+  font-family: "Raleway";
+  font-weight: 100;
+  outline:none !important;
+  border-radius:0;
+  border: #a06ecf !important;;
+  background:none !important;
 }

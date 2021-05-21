@@ -11,7 +11,7 @@ function Acceder() {
         <Row>
           <Col>
           <h4 className="subtitulo">Acceder</h4>
-            <Form className="form-acceder ">
+            <Form className="form-acceder">
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Correo electrónico
                 </Form.Label>

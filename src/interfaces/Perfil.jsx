@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { Button } from "../theme/Styled";
 import user from "../assets/icons/user.svg";
-function Registro() {
+function Perfil() {
   return (
     <React.Fragment>
       <Container
@@ -45,4 +45,4 @@ function Registro() {
   );
 }
 
-export default Registro;
+export default Perfil;
