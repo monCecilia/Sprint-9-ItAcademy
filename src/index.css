@@ -141,7 +141,7 @@ body {
   background-color:hsl(271, 50%, 92%);
 }
 .card-body{
-  background-color: hsl(271, 50%, 98%);;
+  background-color: hsl(271, 50%, 98%);
 }
 .mate-tarea{
   width:2em;
@@ -177,6 +177,7 @@ body {
   background-color: none;
   border: 0.2px solid hsl(271, 50%, 84%);
   border-radius:0;
+  background-color: hsl(271, 50%, 98%);
 }
 .texto-comentarios.form-control.form-control-sm{
   font-family: "Raleway";
@@ -185,6 +186,7 @@ body {
   border: 0.2px solid hsl(271, 50%, 84%);
   border-radius:0;
   margin: 2em 0;
+  background-color: hsl(271, 50%, 98%);
 }
 .form-control{
   color:#a06ecf;
@@ -198,6 +200,7 @@ body {
 
 .tiempo-total.card{
   border: 0.2px solid #F4A240;
+  background-color: hsl(271, 50%, 98%);
   
 }
 .tiempo-total.card-body{
