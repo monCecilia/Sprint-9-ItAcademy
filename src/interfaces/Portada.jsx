@@ -4,13 +4,13 @@ import logo from '../assets/logo_mate.png'
 function Portada() {
     return (
         <React.Fragment>
-            <Container fluid className="altura-max d-flex flex-column justify-content-center align-items-center align-content-center ">
+            <Container fluid className="background">
                 <Row className="altura-max d-flex flex-column justify-content-center align-items-center">
-                    <Col className ="d-flex flex-column justify-content-center align-items-center">
+                    <Col>
                         <img src={logo} className="logo"/>
                     </Col>
-                    <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h1 className="title">mateFocus</h1>
+                    <Col>
+                        <h1 className="titulo">mateFocus</h1>
                     </Col>
                     
                 </Row>

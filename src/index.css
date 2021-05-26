@@ -5,15 +5,34 @@
   // blanco: F7F7F7
   lila: A06ECF 
   */
+/* 
+
+  @media (min-width: 576px) { ... }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+
+ */
+
+
+
+/* GENERALES */
 
 body {
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
   font-family: "Lato", sans-serif;
   font-family: "Raleway", sans-serif;
   text-align: center  !important;
   color: #a06ecf !important;
+  
 }
 .altura-max {
   height: 100vh;
@@ -21,42 +40,63 @@ body {
 .altura-media {
   height: 80vh;
 }
-
 .logo {
-  margin-top: 20vh;
-  max-width: 95vw;
+  margin-top: 25vh;
+  max-width: 90vw;
+  
+}
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px){
+    .logo{
+      max-width: 40vw;
+    }
+    
+  }
+  
+  .background-simple{
+    background-image: url("./assets/bg-simple-movil.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    
+  }
+/* PORTADA */
+.background{
+  background-image: url("./assets/bg-movil.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f7f7f7;
+  
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px){
+  .background{
+    background-image: url("./assets/bg-laptop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    
+    
+  } 
 }
 
-/* PORTADA */
-
-.title {
+.titulo {
   font-family: "Lato", sans-serif;
   font-size: 3em;
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0em;
   text-align: center;
   color: #a06ecf;
 }
 
-/* BIENVENIDXS */
 
-.texto-bienvenidxs {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
-  color: #69e8b4;
-  font-size:1.3em;
-  line-height: 1.2em;
-}
+/* BIENVENIDXS */
 
 .titulo-bienvenidxs {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   text-align: center;
-  color: #69e8b4;
   margin-top: 30vh;
 }
 
@@ -65,9 +105,17 @@ body {
   font-style: normal;
   font-weight: 600;
   text-align: center;
-  color: #69e8b4;
   margin-top:1em;
 }
+.texto-bienvenidxs {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size:1.3em;
+  line-height: 1.2em;
+}
+
 /* INTRO */
 .titulo-intro {
   font-family: "Raleway";
@@ -121,6 +169,10 @@ body {
   color: #a06ecf;
   font-weight: 700;
   padding: 1rem 0;
+  margin-top:10vh;
+}
+.card{
+  margin:0.7rem 0;
 }
 .trabajando-en{
   padding: 1em 0;
@@ -137,11 +189,20 @@ body {
   width: 3em;
   text-align: center;
 }
+
 .card-header.card-tarea{
   background-color:hsl(271, 50%, 92%);
 }
 .card-body{
   background-color: hsl(271, 50%, 98%);
+}
+.card-agregar.card{
+  background-color:hsl(271, 50%, 80%);
+  color: #f7f7f7;
+  font-family: 'Raleway';
+  font-weight: 500;
+  border:#a06ecf;
+  border-style: dashed solid;
 }
 .mate-tarea{
   width:2em;
@@ -149,6 +210,9 @@ body {
 
 .more{
   width:1.5em;
+}
+.add{
+  padding: 0 0.5em;
 }
 .arrow.btn.btn-outline-light{
   color: #a06ecf;
@@ -162,6 +226,14 @@ body {
   font-weight: 300;
   text-align: left;
   margin:0;
+}
+.cuenta-mates {
+  color: #a06ecf !important;
+  font-family: "Raleway";
+  font-weight: 500;
+  text-align: left;
+  margin:0;
+  padding: 1em  0;
 }
 .texto-tiempo {
   color: #a06ecf !important;
@@ -200,18 +272,17 @@ body {
 
 .tiempo-total.card{
   border: 0.2px solid #F4A240;
-  background-color: hsl(271, 50%, 98%);
+  background-color:	hsl(33, 89%, 80%);
+  padding: 0; 
   
 }
-.tiempo-total.card-body{
-  padding: 0;
-  
-}
-
 .tiempo-total-texto{
-  margin: 0.3em 0.3em;
-  font-family: "Raleway";
-  color:#a06ecf;
+  background-color:	hsl(33, 89%, 80%);
+  padding: 0; 
+  font-family: "Lato";
+  color:#f7f7f7;
   font-weight: 500;
+  margin: 0em 0.3em;
 
 }
+

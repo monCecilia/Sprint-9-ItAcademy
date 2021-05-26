@@ -7,6 +7,8 @@ import Acceder from './interfaces/Acceder';
 import Registro from './interfaces/Registro';
 import Perfil from './interfaces/Perfil';
 import Home from './interfaces/Home';
+import ShortBreak from './interfaces/ShortBreak';
+import LongBreak from './interfaces/LongBreak';
 
 
 function App() {
@@ -40,6 +42,14 @@ function App() {
          {/* HOME*/}
          <Route path="/home">
           <Home/>
+        </Route>
+         {/*SHORTBREAK*/}
+         <Route path="/shortbreak">
+          <ShortBreak/>
+        </Route>
+         {/* LONGBREAK*/}
+         <Route path="/longbreak">
+          <LongBreak/>
         </Route>
 
       </Switch>

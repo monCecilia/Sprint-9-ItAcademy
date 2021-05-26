@@ -4,10 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Reloj() {
   return (
-    <React.Fragment>
       <Container>
         <Row>
-          <Col className="d-flex flex-column justify-content-center">
+          <Col >
             {/* RELOJ */}
             <div>
               <h1 className="reloj display-3">25:00</h1>
@@ -28,7 +27,7 @@ function Reloj() {
           </Col>
         </Row>
       </Container>
-    </React.Fragment>
+  
   );
 }
 
