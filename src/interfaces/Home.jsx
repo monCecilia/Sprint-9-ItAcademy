@@ -4,7 +4,7 @@ import NavPerfil from "../components/NavPerfil";
 import Reloj from "../components/Reloj";
 import Tareas from "../components/Tareas";
 
-function Home() {
+function Home(props) {
   return (
     <React.Fragment>
       <Container>
@@ -14,7 +14,7 @@ function Home() {
           </Col>
           <Col className="altura-media d-flex flex-column justify-content-center">
             <Reloj />
-            <Tareas />
+            <Tareas props={props} />
           </Col>
         </Row>
       </Container>
