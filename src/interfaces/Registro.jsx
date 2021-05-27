@@ -6,7 +6,7 @@ function Registro() {
     <React.Fragment>
       <Container
         fluid
-        className="altura-max d-flex flex-column justify-content-center align-items-center align-content-center"
+        className="background altura-max d-flex flex-column justify-content-center align-items-center align-content-center"
       >
         <Row>
           <Col>

@@ -9,7 +9,7 @@ function Reloj() {
           <Col >
             {/* RELOJ */}
             <div>
-              <h1 className="reloj display-3">25:00</h1>
+              <h1 className="reloj display-2">25:00</h1>
             </div>
 
             {/* ICONO PLAY */}

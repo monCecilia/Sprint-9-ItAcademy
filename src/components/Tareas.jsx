@@ -22,11 +22,9 @@ function Tareas() {
       <Container>
         <Row>
           <Col>
-
-
-          {/* TAREA GUARDADA */}
+          <Container className="tareas-width">
+            {/* TAREA GUARDADA */}
             {/* ACORDEON */}
-
             <Accordion defaultActiveKey="0">
               <Card className="card-tarea">
                 <Card.Header className="card-tarea d-flex flex-row justify-content-between align-items-center">
@@ -154,6 +152,9 @@ function Tareas() {
                 horas
               </Card.Body>
             </Card>
+
+          </Container>
+          
           </Col>
         </Row>
       </Container>
@@ -163,4 +164,4 @@ function Tareas() {
 
 export default Tareas;
 
-// className="d-flex flex-column justify-content-center"
+

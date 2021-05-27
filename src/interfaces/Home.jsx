@@ -6,7 +6,7 @@ import Tareas from "../components/Tareas";
 
 function Home() {
   return (
-    <Container className="background-simple altura-max">
+    <Container fluid className="background-simple altura-max">
       <NavPerfil />
       <Reloj />
       <Tareas />

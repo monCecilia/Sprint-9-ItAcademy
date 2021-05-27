@@ -4,23 +4,15 @@ import logo from '../assets/logo_mate.png'
 function Portada() {
     return (
         <React.Fragment>
-            <Container fluid className="altura-max d-flex flex-column justify-content-center align-items-center align-content-center ">
+            <Container fluid className="background altura-max">
                 <Row className="altura-max d-flex flex-column justify-content-center align-items-center">
                     <Col className ="d-flex flex-column justify-content-center align-items-center">
-                        <img src={logo} className="logo"/>
-                    </Col>
-                    <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <h1 className="title">05:00</h1>
+                        <img src={logo} className="logo-break"/>
+                        <h1 className="texto-break display-2">05:00</h1>
                         {/* ACA VA CRONOMETRO CON 5 MINUTOS */}
                     </Col>
-                    
-                </Row>
-                
-                
-               
-
-            </Container>
-            
+                </Row>    
+            </Container>  
         </React.Fragment>
                  
               
