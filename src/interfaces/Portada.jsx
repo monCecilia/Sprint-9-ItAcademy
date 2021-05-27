@@ -3,14 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import logo from '../assets/logo_mate.png'
 function Portada() {
     return (
-        <React.Fragment>
-            <Container fluid className="background">
-                <Row className="altura-max d-flex flex-column justify-content-center align-items-center">
-                    <Col>
-                        <img src={logo} className="logo"/>
+       
+            <Container fluid className="background h-100">
+                <Row className="d-flex justify-content-center align-items-center">
+                    <Col xs={12} md={6} lg={6}>
+                        <img src={logo} style={{maxWidth:"90vw"}}/>
                     </Col>
-                    <Col>
-                        <h1 className="titulo">mateFocus</h1>
+                    <Col xs={12} md={6} lg={6}>
+                        <h1 className="font-weight-bold">mateFocus</h1>
                     </Col>
                     
                 </Row>
@@ -20,7 +20,7 @@ function Portada() {
 
             </Container>
             
-        </React.Fragment>
+   
                  
               
     );

@@ -1,17 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import NavPerfil from "../components/NavPerfil";
 import Reloj from "../components/Reloj";
 import Tareas from "../components/Tareas";
+import Bienvenidxs from "./Bienvenidxs";
+import Intro from "./Intro";
 
-function Home() {
+function MateFocusWeb() {
   return (
     <Container fluid>
       <NavPerfil />
       <Reloj />
       <Tareas />
+      <Bienvenidxs />
+      <Intro />
     </Container>
   );
 }
 
-export default Home;
+export default MateFocusWeb;

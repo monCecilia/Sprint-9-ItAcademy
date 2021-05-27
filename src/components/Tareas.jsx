@@ -20,9 +20,9 @@ function Tareas() {
   return (
     <React.Fragment>
       <Container>
-        <Row>
-          <Col>
-          <Container className="tareas-width">
+        <Row className="d-flex justify-content-center">
+          <Col xs={12} md={6} lg={6}>
+          
             {/* TAREA GUARDADA */}
             {/* ACORDEON */}
             <Accordion defaultActiveKey="0">
@@ -153,7 +153,7 @@ function Tareas() {
               </Card.Body>
             </Card>
 
-          </Container>
+          
           
           </Col>
         </Row>

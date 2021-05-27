@@ -9,6 +9,7 @@ import Perfil from './interfaces/Perfil';
 import Home from './interfaces/Home';
 import ShortBreak from './interfaces/ShortBreak';
 import LongBreak from './interfaces/LongBreak';
+import MateFocusWeb from "./interfaces/MateFocusWeb";
 
 
 function App() {
@@ -43,12 +44,16 @@ function App() {
          <Route path="/home">
           <Home/>
         </Route>
+        {/* HOME VERSION WEB */}
+        <Route path="/mateFocusWeb">
+          <MateFocusWeb/>
+        </Route>
          {/*SHORTBREAK*/}
-         <Route path="/shortbreak">
+        <Route path="/shortbreak">
           <ShortBreak/>
         </Route>
          {/* LONGBREAK*/}
-         <Route path="/longbreak">
+        <Route path="/longbreak">
           <LongBreak/>
         </Route>
 

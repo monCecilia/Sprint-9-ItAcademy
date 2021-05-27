@@ -30,13 +30,15 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: center !important;
   color: #a06ecf !important;
-}
-.altura-max {
+  width: 100vw;
   height: 100vh;
+  background-image: url("./assets/bg-laptop.png");
+  background-size: cover;
+  background-repeat:repeat;
+  background-color: #f7f7f7;
+  background-attachment: fixed;
 }
-.altura-media {
-  height: 80vh;
-}
+
 /* BACKGROUND */
 .background {
   background-image: url("./assets/bg-movil.png");
@@ -47,78 +49,51 @@ body {
   height: 100%;
   min-height: 100vh;
 }
-
-.background-simple {
-  background-image: url("./assets/bg-laptop.png");
-  background-size: cover;
-  background-repeat:repeat;
-  background-color: #f7f7f7;
-  background-attachment: fixed;
-  height: 100%;
-  min-height: 100vh;
+.div-lila{
+  border: 0;
+  background-color: hsl(271, 50%, 93%);
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top:4rem;
 }
 
 /* PORTADA */
 .logo {
   margin-top: 25vh;
-  max-width: 90vw;
 }
-
 
 .titulo {
   font-family: "Lato", sans-serif;
-  font-size: 3em;
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  color: #a06ecf;
+  font-weight:bold;
 }
+
 
 /* BIENVENIDXS */
 
-.titulo-bienvenidxs {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 30vh;
-}
-
-.subtitulo {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 1em;
-}
-.texto-bienvenidxs {
+.texto{
   font-family: "Raleway";
-  font-style: normal;
   font-weight: normal;
-  text-align: center;
-  font-size: 1.3em;
-  line-height: 1.2em;
 }
 
 /* INTRO */
+.card-group-intro, .card-group-intro.card {
+  border: 0;
+  background-color: hsl(271, 50%, 93%);
+  padding: 1rem;
+  border-radius: 15px;
+}
 .titulo-intro {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: bold;
-  text-align: center;
   color: #f4a240;
-  font-size: 1.3em;
   margin: 0;
 }
 .texto-intro {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: normal;
-  text-align: center;
   color: #f4a240;
-  font-size: 1em;
-  line-height: 1em;
+  line-height: 1em;;
 }
+
 
 /* ACCEDER */
 .form-acceder {
@@ -147,9 +122,6 @@ body {
   margin-top: 10vh;
 }
 
-.trabajando-en {
-  padding: 1em 0;
-}
 .texto-light {
   font-family: "Raleway";
   font-weight: 200;
@@ -162,7 +134,7 @@ body {
   text-align: center;
 }
 /* TAREAS */
-.tareas-width.container{
+.width-web.container{
   max-width: 600px;
 }
 .card {
@@ -279,14 +251,17 @@ body {
 /* VERSION WEB */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .background-simple {
-    background-image: url("./assets/bg-laptop.png");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-color: #f7f7f7;
-    height: 100%;
-    min-height: 100vh;
+  .texto-bienvenidxs{
+    font-size: 1.5rem;
+  }
+  .texto-intro {
+    font-family: "Raleway";
+    color: #f4a240;
+    line-height: 1em;
+    font-size: 1.5rem;
+  }
+  .imagen{
+    max-width: 300px;
   }
  }
 

@@ -5,18 +5,15 @@ import user from "../assets/icons/user.svg";
 function Perfil() {
   return (
     <React.Fragment>
-      <Container
-        fluid
-        className="background altura-max d-flex flex-column justify-content-center align-items-center align-content-center"
-      >
-          <Row className="mt-2">
-          <Col>
+      <Container fluid className="background h-100">
+        <Row className="mt-2">
+        <Col xs={12} md={6} lg={6}>
             <img src={user} className="user" />
             <h4 className="subtitulo">Perfil</h4>
           </Col>
-          </Row>
+        </Row>
         <Row>
-          <Col>
+        <Col xs={12} md={6} lg={6}>
             <Form className="form-acceder ">
               <Form.Group controlId="formGroupUser">
                 <Form.Label>Nombre</Form.Label>
