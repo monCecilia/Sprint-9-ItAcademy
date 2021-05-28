@@ -7,7 +7,7 @@ import instagram from "../assets/icons/instagram.svg";
 function Footer() {
   return (
     <footer>
-      <Container className="p-5"style={{ marginTop: "10vh" }}>
+      <Container className="p-5" style={{ marginTop: "10vh" }}>
         <Row className="d-flex justify-content-center">
           <Col className="d-flex justify-content-center">
             <Row className="mr-5">

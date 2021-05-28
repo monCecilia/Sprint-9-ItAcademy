@@ -7,7 +7,8 @@ function Reloj() {
     <Container fluid>
       <Row className="d-flex justify-content-center align-items-center">
         <Col xs={12} md={6} lg={6}>
-          {/* RELOJ */}
+          {/* RELOJ PROGRAMAR CRONOMETRO */}
+          {/* CUANDO SE CUMPLEN LOS 25 MINUTOS DEBE APARECER LA PANTALLA SHORT O LONG BREAK (ESOS CRONOMETROS SE ACTIVAN CON PLAY Y CUANDO TERMINAN SUENA DE NUEVO Y SE APRETA EL PAUSA O STOP Y VUELVE AL HOME) */}
           <div>
             <h1 className="reloj display-2">25:00</h1>
           </div>
@@ -20,6 +21,7 @@ function Reloj() {
           {/* TRABAJANDO EN */}
           <div className="p-1">
             <p className="texto-light ">TRABAJANDO EN</p>
+            {/* ENLACE CON LA CURRENT TASK */}
             <a className="texto-light" href="#currentTask">
               Elaborar informe
             </a>

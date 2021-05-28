@@ -22,7 +22,7 @@ function Tareas() {
       <Container>
         <Row className="d-flex justify-content-center">
           <Col xs={12} md={6} lg={6}>
-          
+            
             {/* TAREA GUARDADA */}
             {/* ACORDEON */}
             <Accordion defaultActiveKey="0">
@@ -35,6 +35,7 @@ function Tareas() {
                   </div>
 
                   <div>
+                    {/* ACA HAY QUE PROGRAMAR PARA QUE APAREZCA CUANTOS "MATES" O BLOQUES LE ASIGNA A CADA TAREA Y CUANTAS LLEVA HECHAS */}
                     <a className="cuenta-mates" href="">
                       1/4
                     </a>
@@ -47,17 +48,20 @@ function Tareas() {
                 {/* ACA COMIENZA EL CONTENIDO QUE SE ESCONDE */}
                 <Accordion.Collapse eventKey="0">
                   <Card.Body className="d-flex flex-column justify-content-start">
+                    {/* ACA INTRODUCE LA TAREA */}
                     <Form.Control
                       size="sm"
                       type="text"
                       className="texto-input"
                       placeholder="Introduzca una tarea"
                     />
+                    {/* ACA LE ASIGNA CUANTOS BLOQUES, TIENEN QUE APARECER POR PANTALLA TANTOS MATES COMO BLOQUES DE TIEMPO NECESITA, VAN A APARECER SI SUBE O BAJA CON LOS BOTONES ARROW */}
                     <p className="texto-tiempo">¿Cuánto tiempo necesitás?</p>
                     <div className="d-flex flex-row justify-content-between align-items-center">
                       <div>
                         <img src={matesinrelleno_lila} className="mate-tarea" />
                       </div>
+                      {/* BOTONES ARROW DE INCREMENTO O DECREMENTO */}
                       <div>
                         <Button className="arrow" variant="outline-light">
                           <img src={arrow_up} className="arrow" />
@@ -68,6 +72,7 @@ function Tareas() {
                       </div>
                     </div>
                     <div>
+                      {/* ACA VAN LOS COMENTARIOS, HAY QUE PONER ALGUNA FUNCIONALIDAD PARA QUE SI EXISTEN APAREZCAN POR FUERA DEL CONTENIDO QUE SE ENCONDE */}
                       <Form.Control
                         size="sm"
                         type="text"
@@ -75,6 +80,7 @@ function Tareas() {
                         placeholder="Comentarios"
                       />
                       <div className="d-flex flex-row justify-content-end align-items-center">
+                        {/* BOTONES DELETE Y DONE PARA GUARDAR O ELIMINAR LA TAREA */}
                         <Button variant="outline-light">
                           <img src={delete_icon} className="delete-done" />
                         </Button>
@@ -91,9 +97,16 @@ function Tareas() {
 
             {/* AGREGAR TAREA */}
 
+            {/* ESTE ES EL BLOQUE PARA AGREGAR LA TAREA, ES IGUAL AL MISMO SOLO QUE EL CONTENIDO VISIBLE EN VEZ DE MOSTRAR LA TAREA GUARDADA, MUESTRA LA LEYENDA "AGREGAR TAREA" */}
+            {/* LOS COMENTARIOS QUE HICE EN EL BLOQUE ANTERIOR VAN EN ESTE BLOQUE DE LA MISMA MANERA */}
+
             <Accordion defaultActiveKey="0">
               <Card className="card-agregar">
-                <Accordion.Toggle as={Card.Header} eventKey="0" className="justify-content center">
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="0"
+                  className="justify-content center"
+                >
                   Agregar tarea
                   <img src={add} className="add" />
                 </Accordion.Toggle>
@@ -143,18 +156,16 @@ function Tareas() {
             {/* TIEMPO TOTAL */}
 
             {/* ACA VAN LAS HORAS LINKEADAS DE TRABAJO TOTAL */}
+            {/* HAY QUE DEFINIR SI LE PONEMOS MÁS INFORMACIÓN COMO EN POMOFOCUS */}
             <Card className="tiempo-total d-flex flex-column justify-content-center align-items-center">
               <Card.Body className="tiempo-total-texto d-flex flex-row justify-content-center align-items-center">
-                  Tiempo total:
+                Tiempo total:
                 <a className="tiempo-total-texto" href="tiempo-total">
                   4
                 </a>
                 horas
               </Card.Body>
             </Card>
-
-          
-          
           </Col>
         </Row>
       </Container>
@@ -163,5 +174,3 @@ function Tareas() {
 }
 
 export default Tareas;
-
-

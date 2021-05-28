@@ -11,11 +11,11 @@ function Portada() {
       <Row className="altura-max d-flex flex-column justify-content-center align-items-center">
         <Col className="d-flex flex-column justify-content-center align-items-center">
           <img src={logo} className="logo-break" />
+          {/* ACA VA CRONOMETRO CON 20 MINUTOS, SE ACTIVA CON EL PLAY Y CUANDO TERMINA SUENA CHICHARRA DE NUEVO Y HAY QUE APRETAR EL PLAY/PAUSA PARA VOLVER AL HOME */}
           <h1 className="texto-break display-2">20:00</h1>
           <Button className="arrow" variant="outline-light">
             <img src={play} className="play" />
           </Button>
-          {/* ACA VA CRONOMETRO CON 20 MINUTOS */}
         </Col>
       </Row>
     </Container>
