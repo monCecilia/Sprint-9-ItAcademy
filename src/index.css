@@ -65,6 +65,7 @@ body {
 .titulo {
   font-family: "Lato", sans-serif;
   font-weight:bold;
+  color: #f4a240;
 }
 
 
@@ -76,31 +77,22 @@ body {
 }
 
 /* INTRO */
-.card-group-intro, .card-group-intro.card {
+.card-group-intro, .card-group-intro.card, .card-group-intro.card-body {
   border: 0;
   background-color: hsl(271, 50%, 93%);
   padding: 1rem;
   border-radius: 15px;
 }
-.titulo-intro {
-  font-family: "Raleway";
-  font-weight: bold;
-  color: #f4a240;
-  margin: 0;
-}
-.texto-intro {
-  font-family: "Raleway";
-  color: #f4a240;
-  line-height: 1em;;
+.card-bloque-texto.card-body{
+  border: 0;
+  background-color: hsl(271, 50%, 70%);
+  padding: 1rem;
+  border-radius: 15px;
+  color: #f7f7f7;
 }
 
 
-/* ACCEDER */
-.form-acceder {
-  font-family: "Raleway";
-  text-align: center;
-  color: #a06ecf;
-}
+
 
 
 /* HOME */
@@ -235,6 +227,8 @@ body {
   font-weight: 700;
   margin: 0em 0.3em;
 }
+
+
 /* BREAKS */
 .texto-break {
   font-family: "Raleway";
@@ -246,6 +240,17 @@ body {
 }
 .logo-break {
   max-width: 90vw;
+}
+
+.texto-footer{
+  color: #f4a240;
+  font-family: "Raleway";
+  text-decoration: none;
+
+}
+
+.icono-redes{
+  max-width: 40px;
 }
 
 /* VERSION WEB */
@@ -273,11 +278,18 @@ body {
 
 
 /* NO USADOS DE LOGIN */
-/* PERFIL */
-/* .user {
-  width: 20vw;
-} */
-/* .logIn {
-  margin-right: 0.5em;
-} */
 
+/* PERFIL */
+.user {
+  width: 20vw;
+} 
+.logIn {
+  margin-right: 0.5em;
+}
+
+/* ACCEDER */
+.form-acceder {
+  font-family: "Raleway";
+  text-align: center;
+  color: #a06ecf;
+}

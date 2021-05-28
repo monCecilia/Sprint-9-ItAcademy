@@ -7,7 +7,9 @@ function NavPerfil(){
   return (
     <Container>
       <Navbar className="nav">
-        <Navbar.Brand className="nav" href="#home">mateFocus</Navbar.Brand>
+        <Navbar.Brand className="nav" href="#home">
+          <h1>mateFocus</h1>
+          </Navbar.Brand>
 
         {/* LOGIN DESACTIVADO */}
         {/* <Navbar.Toggle />

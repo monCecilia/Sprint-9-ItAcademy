@@ -5,6 +5,7 @@ import Reloj from "../components/Reloj";
 import Tareas from "../components/Tareas";
 import Bienvenidxs from "./Bienvenidxs";
 import Intro from "./Intro";
+import Footer from "./Footer";
 
 function MateFocusWeb() {
   return (
@@ -14,6 +15,7 @@ function MateFocusWeb() {
       <Tareas />
       <Bienvenidxs />
       <Intro />
+      <Footer />
     </Container>
   );
 }

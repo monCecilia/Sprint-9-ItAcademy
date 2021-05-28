@@ -12,34 +12,33 @@ function Intro() {
           <CardGroup className="card-group-intro">
             <Card className="card-group-intro">
               <Card.Img variant="top" src={persona1} className="card-group-intro"/>
-              <Card.Body className="card-group-intro">
-                <Card.Title className="titulo">ARMÁ TU LISTA</Card.Title>
-                <Card.Text className="texto">
+              <Card.Body className="card-group-intro d-flex flex-column justify-content-around">
+                <h3 className="titulo">ARMÁ TU LISTA</h3>
+                <h5 className="texto card-bloque-texto">
                 de tareas y asignales cuántos bloques calculás que te va a
                 llevar hacerla
-                </Card.Text>
+                </h5>
               </Card.Body>
               
             </Card>
             <Card className="card-group-intro">
               <Card.Img variant="top" src={persona2} className="card-group-intro" />
-              <Card.Body className="card-group-intro">
-                <Card.Title className="titulo">CUANDO TOCA, TOCA</Card.Title>
-                <Card.Text className="texto">
-                concentrarse, sin distracciones y en la pausa te relajás, escuchas
-              música, hacés algo de la casa y por supuesto sale matecito!
-                </Card.Text>
+              <Card.Body className="card-group-intro d-flex flex-column justify-content-around">
+                <h3 className="titulo">CUANDO TOCA, TOCA</h3>
+                <h5 className="texto">
+                concentrarse, sin distracciones y en la pausa te relajás y por supuesto sale matecito!
+                </h5>
               </Card.Body>
               
             </Card>
             <Card className="card-group-intro">
               <Card.Img variant="top" src={persona3} className="card-group-intro" />
-              <Card.Body className="card-group-intro">
-                <Card.Title className="titulo">MÁS TIEMPO LIBRE</Card.Title>
-                <Card.Text className="texto">
+              <Card.Body className="card-group-intro d-flex flex-column justify-content-around">
+                <h3 className="titulo">MÁS TIEMPO LIBRE</h3>
+                <h5 className="texto">
                 para hacer lo que te gusta, organizando tu jornada tenés más
               tiempo para disfrutar
-                </Card.Text>
+                </h5>
               </Card.Body>
             </Card>
           </CardGroup>
