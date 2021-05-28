@@ -1,16 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import { Button } from "../theme/Styled";
+import { Button } from "../../theme/Styled";
 function Registro() {
   return (
-    <React.Fragment>
-      <Container
-        fluid
-        className="background altura-max d-flex flex-column justify-content-center align-items-center align-content-center"
-      >
+       <Container fluid className="background h-100 d-flex flex-column justify-content-center align-items-center align-content-center">
         <Row>
           <Col>
-            <h4 className="subtitulo">Registro</h4>
+            <h4 className="titulo">Registro</h4>
             <Form className="form-acceder ">
               <Form.Group controlId="formGroupUser">
                 <Form.Label>Nombre</Form.Label>
@@ -35,7 +31,6 @@ function Registro() {
           </Col>
         </Row>
       </Container>
-    </React.Fragment>
   );
 }
 

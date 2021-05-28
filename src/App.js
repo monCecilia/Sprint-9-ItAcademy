@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Portada from './interfaces/Portada';
 import Bienvenidxs from './interfaces/Bienvenidxs';
 import Intro from "./interfaces/Intro";
-import Acceder from './interfaces/Acceder';
-import Registro from './interfaces/Registro';
-import Perfil from './interfaces/Perfil';
+import Acceder from './interfaces/user-interfaces/Acceder';
+import Registro from './interfaces/user-interfaces/Registro';
+import Perfil from './interfaces/user-interfaces/Perfil';
 import Home from './interfaces/Home';
 import ShortBreak from './interfaces/ShortBreak';
 import LongBreak from './interfaces/LongBreak';
@@ -17,8 +17,12 @@ function App() {
   <Fragment>
     <Router>
       <Switch>
+          {/* HOME VERSION WEB */}
+          <Route path="/" exact>
+          <MateFocusWeb/>
+        </Route>
         {/* PORTADA */}
-        <Route path="/" exact>
+        <Route path="/portada">
           <Portada />
         </Route>
         {/* INTRODUCCION */}
@@ -43,10 +47,6 @@ function App() {
          {/* HOME*/}
          <Route path="/home">
           <Home/>
-        </Route>
-        {/* HOME VERSION WEB */}
-        <Route path="/mateFocusWeb">
-          <MateFocusWeb/>
         </Route>
          {/*SHORTBREAK*/}
         <Route path="/shortbreak">

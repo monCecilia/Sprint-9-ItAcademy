@@ -4,8 +4,8 @@ import logo from '../assets/logo_mate.png'
 function Portada() {
     return (
        
-            <Container fluid className="background h-100">
-                <Row className="d-flex justify-content-center align-items-center">
+            <Container fluid className="background h-100" >
+                <Row className="d-flex justify-content-center align-items-center" style={{ paddingTop: "30vh" }}>
                     <Col xs={12} md={6} lg={6}>
                         <img src={logo} style={{maxWidth:"90vw"}}/>
                     </Col>

@@ -7,12 +7,12 @@ function Bienvenidxs() {
     <Container style={{ marginTop: "10vh" }}>
       <Row>
         <Col>
-          <Card className="card-group-intro flex-row justify-content-around">
+          <Card className="card-group-intro flex-md-row justify-content-around">
             <div>
             <Card.Img
               src={logoMate}
-              className="card-group-intro"
-              style={{ width: "400px" }}
+              className="logoMate-card-group-intro"
+              
             
             />
             <h1 className="titulo">mateFocus</h1>

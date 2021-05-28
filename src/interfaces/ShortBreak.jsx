@@ -3,8 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import logo from '../assets/logo_mate.png'
 function Portada() {
     return (
-        <React.Fragment>
-            <Container fluid className="background altura-max">
+        
+        <Container
+        fluid
+        className="background h-100 d-flex flex-column justify-content-center align-items-center align-content-center"
+      >
                 <Row className="altura-max d-flex flex-column justify-content-center align-items-center">
                     <Col className ="d-flex flex-column justify-content-center align-items-center">
                         <img src={logo} className="logo-break"/>
@@ -13,7 +16,7 @@ function Portada() {
                     </Col>
                 </Row>    
             </Container>  
-        </React.Fragment>
+    
                  
               
     );

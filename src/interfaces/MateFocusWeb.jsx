@@ -3,9 +3,9 @@ import {Container} from "react-bootstrap";
 import NavPerfil from "../components/NavPerfil";
 import Reloj from "../components/Reloj";
 import Tareas from "../components/Tareas";
-import Bienvenidxs from "./Bienvenidxs";
-import Intro from "./Intro";
-import Footer from "./Footer";
+import Bienvenidxs from "../interfaces/Bienvenidxs";
+import Intro from "../interfaces/Intro";
+import Footer from "../interfaces/Footer";
 
 function MateFocusWeb() {
   return (

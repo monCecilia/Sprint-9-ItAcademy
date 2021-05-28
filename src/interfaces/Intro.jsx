@@ -9,8 +9,8 @@ function Intro() {
     <Container style={{marginTop:'10vh'}}>
       <Row>
         <Col>
-          <CardGroup className="card-group-intro">
-            <Card className="card-group-intro">
+          <CardGroup>
+            <Card className="card-group-intro m-1">
               <Card.Img variant="top" src={persona1} className="card-group-intro"/>
               <Card.Body className="card-group-intro d-flex flex-column justify-content-around">
                 <h3 className="titulo">ARMÁ TU LISTA</h3>
@@ -21,7 +21,7 @@ function Intro() {
               </Card.Body>
               
             </Card>
-            <Card className="card-group-intro">
+            <Card className="card-group-intro m-1">
               <Card.Img variant="top" src={persona2} className="card-group-intro" />
               <Card.Body className="card-group-intro d-flex flex-column justify-content-around">
                 <h3 className="titulo">CUANDO TOCA, TOCA</h3>
@@ -31,7 +31,7 @@ function Intro() {
               </Card.Body>
               
             </Card>
-            <Card className="card-group-intro">
+            <Card className="card-group-intro m-1">
               <Card.Img variant="top" src={persona3} className="card-group-intro" />
               <Card.Body className="card-group-intro d-flex flex-column justify-content-around">
                 <h3 className="titulo">MÁS TIEMPO LIBRE</h3>

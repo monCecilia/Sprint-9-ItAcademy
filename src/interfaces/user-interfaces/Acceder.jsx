@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import { Button } from "../theme/Styled";
+import { Button } from "../../theme/Styled";
 function Acceder() {
   return (
     <React.Fragment>
       <Container
         fluid
-        className="background altura-max d-flex flex-column justify-content-center align-items-center align-content-center"
+        className="background h-100 d-flex flex-column justify-content-center align-items-center align-content-center"
       >
         <Row>
           <Col>

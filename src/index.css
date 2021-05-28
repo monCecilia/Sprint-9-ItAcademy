@@ -1,24 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
-/* 
-  // amarillo:F4A240
-  // verde: 69E8B4
-  // blanco: F7F7F7
-  lila: A06ECF 
-  */
-/* 
-
-  @media (min-width: 576px) { ... }
-
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) { ... }
-  
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) { ... }
-  
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) { ... }
-
- */
 
 /* GENERALES */
 
@@ -37,11 +17,12 @@ body {
   background-repeat:repeat;
   background-color: #f7f7f7;
   background-attachment: fixed;
+  justify-content: center;
 }
 
 /* BACKGROUND */
 .background {
-  background-image: url("./assets/bg-movil.png");
+  background-image: url("./assets/bg-nubes.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
@@ -49,18 +30,8 @@ body {
   height: 100%;
   min-height: 100vh;
 }
-.div-lila{
-  border: 0;
-  background-color: hsl(271, 50%, 93%);
-  padding: 1rem;
-  border-radius: 15px;
-  margin-top:4rem;
-}
 
-/* PORTADA */
-.logo {
-  margin-top: 25vh;
-}
+/* TIPOGRAFIAS */
 
 .titulo {
   font-family: "Lato", sans-serif;
@@ -68,43 +39,15 @@ body {
   color: #f4a240;
 }
 
-
-/* BIENVENIDXS */
-
 .texto{
   font-family: "Raleway";
   font-weight: normal;
 }
-
-/* INTRO */
-.card-group-intro, .card-group-intro.card, .card-group-intro.card-body {
-  border: 0;
-  background-color: hsl(271, 50%, 93%);
-  padding: 1rem;
-  border-radius: 15px;
-}
-.card-bloque-texto.card-body{
-  border: 0;
-  background-color: hsl(271, 50%, 70%);
-  padding: 1rem;
-  border-radius: 15px;
-  color: #f7f7f7;
-}
-
-
-
-
-
-/* HOME */
-
-/* NAV */
 .nav {
   color: #f4a240 !important;
   font-family: "Lato";
   font-weight: normal;
 }
-
-/* RELOJ */
 .reloj {
   font-family: "Raleway";
   text-align: center;
@@ -121,31 +64,31 @@ body {
   color: #69e8b4;
   margin: 0px;
 }
+.texto-break {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  padding: 0;
+  color: #a06ecf;
+}
+
+
+.texto-footer{
+  color: #f4a240;
+  font-family: "Raleway";
+  text-decoration: none;
+
+}
+
+/* ICONOS, IMAGENES */
+
+.logoMate-card-group-intro{
+  max-width: 200px;
+}
 .play {
   width: 3em;
   text-align: center;
-}
-/* TAREAS */
-.width-web.container{
-  max-width: 600px;
-}
-.card {
-  margin: 0.7rem 0;
-}
-.card-header.card-tarea {
-  background-color: hsl(271, 50%, 92%);
-}
-.card-body {
-  background-color: hsl(271, 50%, 98%);
-}
-.card-agregar.card {
-  background-color: hsl(271, 50%, 80%);
-  color: #f7f7f7;
-  font-family: "Raleway";
-  font-weight: 400;
-  border: #a06ecf;
-  border-style: dashed solid;
- 
 }
 .mate-tarea {
   width: 2em;
@@ -163,6 +106,62 @@ body {
   padding: 0em;
   margin: 0.3em;
 }
+.logo-break {
+  max-width: 90vw;
+}
+.icono-redes{
+  max-width: 40px;
+}
+
+/* DIVS, CONTAINERS, CARDS*/
+.div-lila{
+  border: 0;
+  background-color: hsl(271, 50%, 93%);
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top:4rem;
+}
+.card-group-intro, .card-group-intro.card, .card-group-intro.card-body {
+  border: 0;
+  background-color: hsl(271, 50%, 93%);
+  padding: 1rem;
+  border-radius: 15px;
+}
+.card-bloque-texto.card-body{
+  border: 0;
+  background-color: hsl(271, 50%, 70%);
+  padding: 1rem;
+  border-radius: 15px;
+  color: #f7f7f7;
+}
+.tiempo-total.card {
+  border: 0.2px solid #f4a240;
+  background-color: hsl(33, 89%, 80%);
+  padding: 0;
+  
+}
+.card {
+  margin: 0.7rem 0;
+}
+.card-header.card-tarea {
+  background-color: hsl(271, 50%, 92%);
+}
+.card-body {
+  background-color: hsl(271, 50%, 98%);
+}
+
+/* TAREAS */
+
+.card-agregar.card {
+  background-color: hsl(271, 50%, 80%);
+  color: #f7f7f7;
+  font-family: "Raleway";
+  font-weight: 400;
+  border: #a06ecf;
+  border-style: dashed solid;
+ 
+}
+
 .texto-tarea {
   color: #a06ecf !important;
   font-family: "Raleway";
@@ -213,12 +212,6 @@ body {
   margin: 0.3em;
 }
 
-.tiempo-total.card {
-  border: 0.2px solid #f4a240;
-  background-color: hsl(33, 89%, 80%);
-  padding: 0;
-  
-}
 .tiempo-total-texto {
   background-color: hsl(33, 89%, 80%);
   padding: 0;
@@ -228,30 +221,6 @@ body {
   margin: 0em 0.3em;
 }
 
-
-/* BREAKS */
-.texto-break {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  padding: 0;
-  color: #a06ecf;
-}
-.logo-break {
-  max-width: 90vw;
-}
-
-.texto-footer{
-  color: #f4a240;
-  font-family: "Raleway";
-  text-decoration: none;
-
-}
-
-.icono-redes{
-  max-width: 40px;
-}
 
 /* VERSION WEB */
 /* Medium devices (tablets, 768px and up) */
@@ -267,6 +236,9 @@ body {
   }
   .imagen{
     max-width: 300px;
+  }
+  .logoMate-card-group-intro{
+    max-width: 400px;
   }
  }
 
