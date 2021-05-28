@@ -89,6 +89,7 @@ body {
 .play {
   width: 3em;
   text-align: center;
+  border: 0;
 }
 .mate-tarea {
   width: 2em;

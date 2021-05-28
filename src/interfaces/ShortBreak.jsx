@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import logo from "../assets/logo_mate.png";
 import play from "../assets/icons/play.svg";
 function Portada() {
@@ -12,9 +12,9 @@ function Portada() {
         <Col className="d-flex flex-column justify-content-center align-items-center">
           <img src={logo} className="logo-break" />
           <h1 className="texto-break display-2">05:00</h1>
-          <div>
+          <Button className="arrow" variant="outline-light">
             <img src={play} className="play" />
-          </div>
+          </Button>
           {/* ACA VA CRONOMETRO CON 5 MINUTOS */}
         </Col>
       </Row>

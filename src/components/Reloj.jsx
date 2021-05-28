@@ -1,6 +1,6 @@
 import React from "react";
 import play from "../assets/icons/play.svg";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 function Reloj() {
   return (
@@ -13,9 +13,9 @@ function Reloj() {
           </div>
 
           {/* ICONO PLAY */}
-          <div>
+          <Button className="arrow" variant="outline-light">
             <img src={play} className="play" />
-          </div>
+          </Button>
 
           {/* TRABAJANDO EN */}
           <div className="p-1">
