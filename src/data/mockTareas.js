@@ -1,6 +1,6 @@
 export const mockTareas = [
   {
-    id: 0,
+    id: 444,
     titulo: "uno",
     comentario: "com1",
     mates: 1,
@@ -8,7 +8,7 @@ export const mockTareas = [
     esActiva: false,
   },
   {
-    id: 0,
+    id: 1,
     titulo: "dos",
     comentario: "com2",
     mates: 2,
@@ -16,7 +16,7 @@ export const mockTareas = [
     esActiva: false,
   },
   {
-    id: 0,
+    id: 2,
     titulo: "tres",
     comentario: "com3",
     mates: 3,

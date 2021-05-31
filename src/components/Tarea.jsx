@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import more from "../assets/icons/more.svg";
 import matesinrelleno_lila from "../assets/icons/matesinrelleno_lila.png";
 import matesinrelleno_verde from "../assets/icons/matesinrelleno_verde.png";
@@ -10,6 +10,11 @@ import { Accordion, Form, Card, Button } from "react-bootstrap";
 
 function Tarea(props) {
   const [tarea, setTarea] = useState(props.tarea);
+
+  useEffect(() => {
+    setTarea(props.tarea);
+  }, [props.tarea]);
+
   console.log(tarea);
   return (
     <Card className="card-tarea">
@@ -39,14 +44,18 @@ function Tarea(props) {
           <a className="cuenta-mates" href="">
             {tarea.matesHechos}/{tarea.mates}
           </a>
-          <Accordion.Toggle as={Button} variant="link" eventKey={props.indice}>
+          <Accordion.Toggle
+            as={Button}
+            variant="link"
+            eventKey={props.tarea.id}
+          >
             <img src={more} className="more" />
           </Accordion.Toggle>
         </div>
       </Card.Header>
 
       {/* ACA COMIENZA EL CONTENIDO QUE SE ESCONDE */}
-      <Accordion.Collapse eventKey={props.indice}>
+      <Accordion.Collapse eventKey={props.tarea.id}>
         <Card.Body className="d-flex flex-column justify-content-start">
           {/* ACA INTRODUCE LA TAREA */}
           <Form.Control
@@ -60,12 +69,16 @@ function Tarea(props) {
           <p className="texto-tiempo">¿Cuánto tiempo necesitás?</p>
           <div className="d-flex flex-row justify-content-between align-items-center">
             <div>
-              {Array(tarea.matesHechos).fill(
-                <img src={matesinrelleno_verde} className="mate-tarea" />
-              )}
-              {Array(tarea.mates - tarea.matesHechos).fill(
-                <img src={matesinrelleno_lila} className="mate-tarea" />
-              )}
+              {[...Array(tarea.matesHechos)].map((x, i) => (
+                <img
+                  src={matesinrelleno_verde}
+                  className="mate-tarea"
+                  key={i}
+                />
+              ))}
+              {[...Array(tarea.mates - tarea.matesHechos)].map((x, i) => (
+                <img src={matesinrelleno_lila} className="mate-tarea" key={i} />
+              ))}
             </div>
             {/* BOTONES ARROW DE INCREMENTO O DECREMENTO */}
             <div>
@@ -85,7 +98,7 @@ function Tarea(props) {
                   src={arrow_down}
                   className="arrow"
                   onClick={() =>
-                    tarea.mates - tarea.matesHechos > 0
+                    tarea.mates > tarea.matesHechos && tarea.mates > 1
                       ? setTarea({ ...tarea, mates: tarea.mates - 1 })
                       : null
                   }
@@ -107,19 +120,17 @@ function Tarea(props) {
             />
             <div className="d-flex flex-row justify-content-end align-items-center">
               {/* BOTONES DELETE Y DONE PARA GUARDAR O ELIMINAR LA TAREA */}
-              <Button variant="outline-light">
-                <img
-                  src={delete_icon}
-                  className="delete-done"
-                  onClick={() => props.deleteClick()}
-                />
+              <Button
+                variant="outline-light"
+                onClick={() => props.deleteClick()}
+              >
+                <img src={delete_icon} className="delete-done" />
               </Button>
-              <Button variant="outline-light" type="submit">
-                <img
-                  src={done}
-                  className="delete-done"
-                  onClick={() => props.doneClick(tarea)}
-                />
+              <Button
+                variant="outline-light"
+                onClick={() => props.doneClick(tarea)}
+              >
+                <img src={done} className="delete-done" />
               </Button>
             </div>
           </div>
