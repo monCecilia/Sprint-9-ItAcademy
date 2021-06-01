@@ -6,10 +6,10 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 function Reloj(props) {
   const [matesSesion, setMatesSesion] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  const [counter, setCounter] = useState(25 * 60);
+  const [counter, setCounter] = useState(5);
   const [time, setTime] = useState({
-    second: "00",
-    minute: "25",
+    second: "05",
+    minute: "00",
   });
 
   var timer = [
@@ -17,6 +17,17 @@ function Reloj(props) {
     { tipo: "descCorto", tiempo: 5 },
     { tipo: "descLargo", tiempo: 20 },
   ];
+
+  function stopTimer() {
+    setIsActive(false);
+    setCounter(5);
+    setTime({ second: "05", minute: "00" });
+  }
+
+  function terminaMate() {
+    stopTimer();
+    props.addMateHecho();
+  }
 
   useEffect(() => {
     let intervalId;
@@ -36,13 +47,12 @@ function Reloj(props) {
         counter > 0 && setCounter((counter) => counter - 1);
       }, 1000);
     }
+    if (counter === 0) {
+      terminaMate();
+    }
     return () => clearInterval(intervalId);
   }, [isActive, counter]);
-  function stopTimer() {
-    setIsActive(false);
-    setCounter(25 * 60);
-    setTime({ second: "00", minute: "25" });
-  }
+
   return (
     <Container fluid>
       <Row className="d-flex justify-content-center align-items-center">
