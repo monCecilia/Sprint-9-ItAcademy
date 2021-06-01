@@ -15,10 +15,12 @@ function Tarea(props) {
     setTarea(props.tarea);
   }, [props.tarea]);
 
-  console.log(tarea);
   return (
     <Card className="card-tarea">
-      <Card.Header className="card-tarea d-flex flex-row justify-content-between align-items-center">
+      <Card.Header
+        className="card-tarea d-flex flex-row justify-content-between align-items-center"
+        onClick={() => props.setActiva()}
+      >
         <div className="d-flex flex-row justify-content-start align-items-center">
           {/* ACA PODRIA CAMBIAR EL MATE DE LILA A VERDE CUANDO ESTÁ COMPLETA LA TAREA Y TACHAR TEXTO */}
           {tarea.mates - tarea.matesHechos === 0 ? (

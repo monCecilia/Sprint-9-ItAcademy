@@ -14,7 +14,7 @@ body {
   height: 100vh;
   background-image: url("./assets/bg-laptop.png");
   background-size: cover;
-  background-repeat:repeat;
+  background-repeat: repeat;
   background-color: #f7f7f7;
   background-attachment: fixed;
   justify-content: center;
@@ -35,11 +35,11 @@ body {
 
 .titulo {
   font-family: "Lato", sans-serif;
-  font-weight:bold;
+  font-weight: bold;
   color: #f4a240;
 }
 
-.texto{
+.texto {
   font-family: "Raleway";
   font-weight: normal;
 }
@@ -73,17 +73,15 @@ body {
   color: #a06ecf;
 }
 
-
-.texto-footer{
+.texto-footer {
   color: #f4a240;
   font-family: "Raleway";
   text-decoration: none;
-
 }
 
 /* ICONOS, IMAGENES */
 
-.logoMate-card-group-intro{
+.logoMate-card-group-intro {
   max-width: 200px;
 }
 .play {
@@ -110,25 +108,27 @@ body {
 .logo-break {
   max-width: 90vw;
 }
-.icono-redes{
+.icono-redes {
   max-width: 40px;
 }
 
 /* DIVS, CONTAINERS, CARDS*/
-.div-lila{
+.div-lila {
   border: 0;
   background-color: hsl(271, 50%, 93%);
   padding: 1rem;
   border-radius: 15px;
-  margin-top:4rem;
+  margin-top: 4rem;
 }
-.card-group-intro, .card-group-intro.card, .card-group-intro.card-body {
+.card-group-intro,
+.card-group-intro.card,
+.card-group-intro.card-body {
   border: 0;
   background-color: hsl(271, 50%, 93%);
   padding: 1rem;
   border-radius: 15px;
 }
-.card-bloque-texto.card-body{
+.card-bloque-texto.card-body {
   border: 0;
   background-color: hsl(271, 50%, 70%);
   padding: 1rem;
@@ -139,7 +139,6 @@ body {
   border: 0.2px solid #f4a240;
   background-color: hsl(33, 89%, 80%);
   padding: 0;
-  
 }
 .card {
   margin: 0.7rem 0;
@@ -160,7 +159,6 @@ body {
   font-weight: 400;
   border: #a06ecf;
   border-style: dashed solid;
- 
 }
 
 .texto-tarea {
@@ -222,11 +220,10 @@ body {
   margin: 0em 0.3em;
 }
 
-
 /* VERSION WEB */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .texto-bienvenidxs{
+  .texto-bienvenidxs {
     font-size: 1.5rem;
   }
   .texto-intro {
@@ -235,27 +232,24 @@ body {
     line-height: 1em;
     font-size: 1.5rem;
   }
-  .imagen{
+  .imagen {
     max-width: 300px;
   }
-  .logoMate-card-group-intro{
+  .logoMate-card-group-intro {
     max-width: 400px;
   }
- }
+}
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
-
-
 
 /* NO USADOS DE LOGIN */
 
 /* PERFIL */
 .user {
   width: 20vw;
-} 
+}
 .logIn {
   margin-right: 0.5em;
 }
