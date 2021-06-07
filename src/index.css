@@ -164,6 +164,13 @@ body {
 .texto-tarea {
   color: #a06ecf !important;
   font-family: "Raleway";
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+}
+.texto-comentarios {
+  color: #a06ecf !important;
+  font-family: "Raleway";
   font-weight: 300;
   text-align: left;
   margin: 0;
