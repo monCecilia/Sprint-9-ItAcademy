@@ -21,26 +21,31 @@ function Tarea(props) {
         className="card-tarea d-flex flex-row justify-content-between align-items-center"
         onClick={() => props.setActiva()}
       >
-        <div className="d-flex flex-row justify-content-start align-items-center">
-          {/* ACA PODRIA CAMBIAR EL MATE DE LILA A VERDE CUANDO ESTÁ COMPLETA LA TAREA Y TACHAR TEXTO */}
-          {tarea.mates - tarea.matesHechos === 0 ? (
-            <>
-              <img src={matesinrelleno_verde} className="mate-tarea" />
-              <p
-                className="texto-tarea"
-                style={{ textDecoration: "line-through" }} //Meter en css
-              >
-                {tarea.titulo}
-              </p>
-            </>
-          ) : (
-            <>
-              <img src={matesinrelleno_lila} className="mate-tarea" />
-              <p className="texto-tarea">{tarea.titulo}</p>
-            </>
-          )}
+        {/* div para que los comentarios queden por debajo */}
+        <div className="d-flex flex-column justify-content-start align-items-center">
+          <div className="d-flex flex-row justify-content-start align-items-center">
+            {/* ACA PODRIA CAMBIAR EL MATE DE LILA A VERDE CUANDO ESTÁ COMPLETA LA TAREA Y TACHAR TEXTO */}
+
+            {tarea.mates - tarea.matesHechos === 0 ? (
+              <>
+                <img src={matesinrelleno_verde} className="mate-tarea" />
+                <p
+                  className="texto-tarea"
+                  style={{ textDecoration: "line-through" }} //Meter en css
+                >
+                  {tarea.titulo}
+                </p>
+              </>
+            ) : (
+              <>
+                <img src={matesinrelleno_lila} className="mate-tarea" />
+                <p className="texto-tarea">{tarea.titulo}</p>
+              </>
+            )}
+          </div>
+          <div className="texto-comentarios">{tarea.comentario}</div>
         </div>
-        <div>{tarea.comentario}</div>
+
         <div>
           {/* ACA HAY QUE PROGRAMAR PARA QUE APAREZCA CUANTOS "MATES" O BLOQUES LE ASIGNA A CADA TAREA Y CUANTAS LLEVA HECHAS */}
           <a className="cuenta-mates" href="">

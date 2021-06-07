@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
 import Tarea from "./Tarea";
 import AddTarea from "./AddTarea";
-import Reloj from "../components/Reloj";
+import Reloj from "../components/RelojNew";
 
 function Tareas({ tareas, setTareas }) {
   const [tareaActiva, setTareaactiva] = useState(0);
