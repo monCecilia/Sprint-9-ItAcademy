@@ -16,14 +16,14 @@ const Reloj = (props) => {
     if (matesSesion % 2 !== 0 && matesSesion % 7 !== 0) {
       console.log("MATEEE");
       addMate();
-      setTiempo(5); //cambiar luego a 5*60
+      setTiempo(5 * 60); //cambiar luego a 5*60
       setLabel("Descanso Corto");
     } else if (matesSesion % 7 === 0 && matesSesion > 0) {
       addMate();
-      setTiempo(10); //cammbiar luego a 20*60
+      setTiempo(20 * 60); //cammbiar luego a 20*60
       setLabel("Descanso Largo");
     } else {
-      setTiempo(2); //cambiar luego a 25*60
+      setTiempo(25 * 60); //cambiar luego a 25*60
       setLabel("Mate");
     }
   }, [matesSesion]);

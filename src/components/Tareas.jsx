@@ -37,6 +37,14 @@ function Tareas({ tareas, setTareas }) {
     />
   ));
 
+  const totalHoras = () => {
+    var sum = 0;
+    _tareas.forEach((element) => {
+      sum = element.mates + sum;
+    });
+    return sum / 2;
+  };
+
   return (
     <React.Fragment>
       <Reloj
@@ -59,7 +67,7 @@ function Tareas({ tareas, setTareas }) {
               <Card.Body className="tiempo-total-texto d-flex flex-row justify-content-center align-items-center">
                 Tiempo total:
                 <a className="tiempo-total-texto" href="tiempo-total">
-                  4
+                  {totalHoras()}
                 </a>
                 horas
               </Card.Body>
