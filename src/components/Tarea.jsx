@@ -43,7 +43,7 @@ function Tarea(props) {
               </>
             )}
           </div>
-          <div className="texto-comentarios">{tarea.comentario}</div>
+          <div className="texto-comentario">{tarea.comentario}</div>
         </div>
 
         <div>
