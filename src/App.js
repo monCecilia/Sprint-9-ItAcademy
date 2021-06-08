@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Portada from "./interfaces/Portada";
 import Bienvenidxs from "./interfaces/Bienvenidxs";
@@ -11,7 +11,17 @@ import ShortBreak from "./interfaces/ShortBreak";
 import LongBreak from "./interfaces/LongBreak";
 import MateFocusWeb from "./interfaces/MateFocusWeb";
 
+import { mockTareas } from "./data/mockTareas";
+
 function App() {
+  const [tareas, setTareas] = useState(
+    localStorage.getItem("tareas") || JSON.stringify(mockTareas)
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tareas", tareas);
+  }, [tareas]);
+
   return (
     <div>
       <Fragment>
@@ -19,7 +29,7 @@ function App() {
           <Switch>
             {/* HOME VERSION WEB */}
             <Route path="/" exact>
-              <MateFocusWeb />
+              <MateFocusWeb tareas={tareas} setTareas={setTareas} />
             </Route>
             {/*SHORTBREAK*/}
             <Route path="/shortbreak">
@@ -30,9 +40,8 @@ function App() {
               <LongBreak />
             </Route>
 
-
             {/* ESTOS COMPONENTES SON DE LA VERSIÓN MOVIL (SUMADOS A LOS BREAKS Y LA PORTADA, QUE SE RE UTILIZAN) */}
-            
+
             {/* PORTADA */}
             <Route path="/portada">
               <Portada />
