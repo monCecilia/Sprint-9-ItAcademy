@@ -4,12 +4,12 @@ import NavPerfil from "../components/NavPerfil";
 import Reloj from "../components/Reloj";
 import Tareas from "../components/Tareas";
 
-function Home() {
+function Home(props) {
   return (
     <Container fluid>
       <NavPerfil />
       <Reloj />
-      <Tareas />
+      <Tareas props={props} />
     </Container>
   );
 }
